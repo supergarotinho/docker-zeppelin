@@ -14,26 +14,26 @@
 	* hbase
 	* elasticsearch 
 * Python libs:
-  * Python 3.4
-  * **Data**
-		* NumPy
-		* pandas
-		* PandaSQL
-  * **ML and Math**
+	* Python 3.4
+	* **Data**
+ 		* NumPy
+ 		* pandas
+ 		* PandaSQL
+	* **ML and Math**
 		* sklearn 
 		* SciPy
-  * **Visualization** 	
+	* **Visualization** 	
 		* matplotlib
 		* seaborn
 		* folium (GeoVisualization)
-  * **Util**
+	* **Util**
 		* ijson
 		* datetime
 		* tweepy 
-  * **NLP** 
+	* **NLP** 
 		* nltk 
 		* gensim (Topic and language modelling)
-  * **Graphs** 
+	* **Graphs** 
 		* networkx 
 		* igraph 
 
