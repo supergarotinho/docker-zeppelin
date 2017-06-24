@@ -2,3 +2,5 @@
 ## python libs
 FROM dylanmei/zeppelin:latest
 MAINTAINER Anderson Santos anderson@gruponeuro.com.br
+
+pip install ijson matplotlib datetime folium tweepy sklearn nltk gensim networkx igraph seaborn

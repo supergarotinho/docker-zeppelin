@@ -15,11 +15,27 @@
 	* elasticsearch 
 * Python libs:
   * Python 3.4
-  * NumPy
-  * PandaSQL
-  * SciPy
-
-  * matplotlib
+  * **Data**
+		* NumPy
+		* pandas
+		* PandaSQL
+  * **ML and Math**
+		* sklearn 
+		* SciPy
+  * **Visualization** 	
+		* matplotlib
+		* seaborn
+		* folium (GeoVisualization)
+  * **Util**
+		* ijson
+		* datetime
+		* tweepy 
+  * **NLP** 
+		* nltk 
+		* gensim (Topic and language modelling)
+  * **Graphs** 
+		* networkx 
+		* igraph 
 
 ### How to use it with Docker
 
