@@ -26,12 +26,16 @@
 		* matplotlib
 		* seaborn
 		* folium (GeoVisualization)
+		* wordcloud
 	* **Util**
 		* ijson
 		* datetime
 		* tweepy 
 	* **NLP** 
-		* nltk 
+		* **nltk** 
+			* **punkt** - sentence segmentation
+			* **stopwords**
+			* **rslp** - lemmatizer da Viviane Orengo
 		* gensim (Topic and language modelling)
 	* **Graphs** 
 		* networkx 
