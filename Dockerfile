@@ -1,31 +1,28 @@
-## Based on an docker image with spark, zeppelin and some basic Data Science
-## python libs
-FROM dylanmei/zeppelin:latest
+## Based on dylanmei/zeppelin and gettyimages/spark
+# FROM debian:stretch
+#FROM debian:jessie
+FROM apache/zeppelin:0.7.2
 MAINTAINER Anderson Santos anderson@gruponeuro.com.br
 
-RUN apt-get update && apt-get install -y \
-  build-essential \
-  pkg-config \
-  autoconf \
-  libtool \
-  python3-dev \
-  && rm -rf /var/lib/apt/lists/*
-
-RUN pip install \
-  ijson \
-  matplotlib \
-  datetime \
-  folium \
-  tweepy \
-  pandas \
-  sklearn \
-  networkx \
-  igraph \
-  seaborn \
-  nltk \
-  gensim \
-  wordcloud
-
+# Usefull Python libs and deps
 COPY python-deps.py /tmp/
-RUN python3 /tmp/python-deps.py
-RUN rm /tmp/python-deps.py
+RUN pip install \
+    ijson \
+    matplotlib \
+    datetime \
+    folium \
+    tweepy \
+    pandas \
+    sklearn \
+    networkx \
+    igraph \
+    seaborn \
+    nltk \
+    gensim \
+    wordcloud \
+    numpy \
+    pandasql \
+    scipy
+
+RUN python /tmp/python-deps.py \
+  && rm /tmp/python-deps.py

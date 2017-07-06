@@ -2,8 +2,8 @@
 
 ### Main features
 
-* Spark
-* zeppelin
+* Spark -  2.1.1
+* zeppelin - 0.7.1
 	* spark
 	* shell
 	* angular
@@ -12,15 +12,15 @@
 	* jdbc
 	* python
 	* hbase
-	* elasticsearch 
+	* elasticsearch
 * Python libs:
-	* Python 3.4
+	* Python 3.5
 	* **Data**
  		* NumPy
  		* pandas
  		* PandaSQL
 	* **ML and Math**
-		* sklearn 
+		* sklearn
 		* SciPy
 	* **Visualization** 	
 		* matplotlib
@@ -30,19 +30,19 @@
 	* **Util**
 		* ijson
 		* datetime
-		* tweepy 
-	* **NLP** 
-		* **nltk** 
+		* tweepy
+	* **NLP**
+		* **nltk**
 			* **punkt** - sentence segmentation
 			* **stopwords**
 			* **rslp** - lemmatizer da Viviane Orengo
 		* gensim (Topic and language modelling)
-	* **Graphs** 
-		* networkx 
-		* igraph 
+	* **Graphs**
+		* networkx
+		* igraph
 
 ### How to use it with Docker
 
 ```bash
-docker run --rm -d -p 8080:8080 -v $(pwd):/usr/zeppelin/notebook -e USERID=$UID supergarotinho/zeppelin
+docker run --rm -d -p 8080:8080 -v $PWD:/notebook -e ZEPPELIN_NOTEBOOK_DIR='/notebook' supergarotinho/zeppelin
 ```
