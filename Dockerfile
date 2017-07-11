@@ -22,7 +22,8 @@ RUN pip install \
     wordcloud \
     numpy \
     pandasql \
-    scipy
+    scipy \
+    palettable
 
 RUN python /tmp/python-deps.py \
   && rm /tmp/python-deps.py
