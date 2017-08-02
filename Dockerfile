@@ -5,8 +5,11 @@ FROM apache/zeppelin:0.7.2
 MAINTAINER Anderson Santos anderson@gruponeuro.com.br
 
 # Usefull Python libs and deps
-COPY python-deps.py /tmp/
-RUN pip install \
+RUN apt-get update && \
+    apt-get install -y python3-pip && \
+    pip3 install --upgrade pip
+
+RUN pip3 install \
     ijson \
     matplotlib \
     datetime \
@@ -25,5 +28,11 @@ RUN pip install \
     scipy \
     palettable
 
-RUN python /tmp/python-deps.py \
+# Download corpus and models dependencies
+COPY python-deps.py /tmp/
+RUN python3 /tmp/python-deps.py \
   && rm /tmp/python-deps.py
+
+# Change the zeppelin interpreter for python3
+# RUN sed -i "s/^\([ \t]*\"zeppelin\.python\":\).*/\1 \"python3\"\,/" /zeppelin/conf/interpreter.json
+COPY interpreter.json /zeppelin/conf/interpreter.json

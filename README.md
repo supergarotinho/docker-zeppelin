@@ -36,6 +36,7 @@
 			* **punkt** - sentence segmentation
 			* **stopwords**
 			* **rslp** - lemmatizer da Viviane Orengo
+			* **floresta** - Corpus Floresta Sint?tica for PT_BR
 		* gensim (Topic and language modelling)
 	* **Graphs**
 		* networkx

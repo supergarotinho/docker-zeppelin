@@ -10,3 +10,6 @@ nltk.download('stopwords')
 
 # Lemmatizer da Viviane Orengo
 nltk.download('rslp')
+
+# Floresta Corpus
+nltk.download('floresta')
