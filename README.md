@@ -1,5 +1,11 @@
 ## Docker image of zeppelin notebook
 
+[![Build Status](https://dockerbuildbadges.quelltext.eu/status.svg?organization=supergarotinho&repository=zeppelin)](https://hub.docker.com/r/supergarotinho/zeppelin/)
+
+**Author:** [Anderson Santos](https://br.linkedin.com/in/andersonrss)
+
+**DockerHub repository:** https://hub.docker.com/r/supergarotinho/zeppelin/
+
 ### Main features
 
 * Spark -  2.1.1
