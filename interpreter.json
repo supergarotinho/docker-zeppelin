@@ -340,7 +340,7 @@
         "zeppelin.spark.importImplicit": "true",
         "zeppelin.spark.concurrentSQL": "false",
         "zeppelin.spark.useHiveContext": "true",
-        "zeppelin.pyspark.python": "python",
+        "zeppelin.pyspark.python": "python3",
         "zeppelin.dep.localrepo": "local-repo",
         "zeppelin.R.knitr": "true",
         "zeppelin.spark.maxResult": "1000",

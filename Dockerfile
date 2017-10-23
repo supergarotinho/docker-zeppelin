@@ -33,6 +33,10 @@ COPY python-deps.py /tmp/
 RUN python3 /tmp/python-deps.py \
   && rm /tmp/python-deps.py
 
-# Change the zeppelin interpreter for python3
+# Set python3 for spark workers
+ENV PYSPARK_PYTHON=/usr/bin/python3
+
+# Change the zeppelin interpreter for python3 - bellow are the changes
 # RUN sed -i "s/^\([ \t]*\"zeppelin\.python\":\).*/\1 \"python3\"\,/" /zeppelin/conf/interpreter.json
+# RUN sed -i "s/^\([ \t]*\"zeppelin\.pyspark\.python\":\).*/\1 \"python3\"\,/" /zeppelin/conf/interpreter.json
 COPY interpreter.json /zeppelin/conf/interpreter.json
