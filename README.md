@@ -3,10 +3,10 @@
 **Fun data science with zeppelin and docker**
 
 
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/supergarotinho/docker-zeppelin/blob/master/LICENSE)
 [![Build Status](https://dockerbuildbadges.quelltext.eu/status.svg?organization=supergarotinho&repository=zeppelin)](https://hub.docker.com/r/supergarotinho/zeppelin/)
 [![Docker Stars](https://img.shields.io/docker/stars/supergarotinho/zeppelin.svg)](https://hub.docker.com/r/supergarotinho/zeppelin/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/supergarotinho/zeppelin.svg)](https://hub.docker.com/r/supergarotinho/zeppelin/)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/supergarotinho/docker-zeppelin/blob/master/LICENSE)
 [![License: BSD-3](https://img.shields.io/badge/license-BSD3-blue.svg)](https://github.com/supergarotinho/docker-bashtest/blob/master/LICENSE)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
