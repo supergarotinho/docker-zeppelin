@@ -1,13 +1,13 @@
 ## Based on dylanmei/zeppelin and gettyimages/spark
 # FROM debian:stretch
 #FROM debian:jessie
-FROM apache/zeppelin:0.7.2
+FROM apache/zeppelin:0.11.0
 MAINTAINER Anderson Santos anderson@gruponeuro.com.br
 
 # Usefull Python libs and deps
-RUN apt-get update && \
-    apt-get install -y python3-pip && \
-    pip3 install --upgrade pip
+# RUN apt-get update && \
+#     apt-get install -y python3-pip && \
+#     pip3 install --upgrade pip
 
 RUN pip3 install \
     ijson \
@@ -16,7 +16,7 @@ RUN pip3 install \
     folium \
     tweepy \
     pandas \
-    sklearn \
+    scikit-learn \
     networkx \
     igraph \
     seaborn \
@@ -30,8 +30,7 @@ RUN pip3 install \
 
 # Download corpus and models dependencies
 COPY python-deps.py /tmp/
-RUN python3 /tmp/python-deps.py \
-  && rm /tmp/python-deps.py
+RUN python3 /tmp/python-deps.py
 
 # Set python3 for spark workers
 ENV PYSPARK_PYTHON=/usr/bin/python3
