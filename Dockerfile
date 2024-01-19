@@ -17,6 +17,7 @@ RUN pip3 install \
     tweepy \
     pandas \
     scikit-learn \
+	kpod \
     networkx \
     igraph \
     seaborn \

@@ -84,7 +84,8 @@ docker run --rm -d -p 8080:8080 -v $PWD:/notebook -e ZEPPELIN_NOTEBOOK_DIR='/not
 Build and push:
 
 ```bash
-
+docker build -t supergarotinho/zeppelin .
+docker push supergarotinho/zeppelin
 ```
 
 ## Authors
